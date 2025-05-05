@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Path Test</title>
+</head>
+<body>
+    <h1>GitHub Pages Path Test</h1>
+    <p>This file is used to test path resolution on GitHub Pages.</p>
+    <p id="base-url"></p>
+    
+    <script>
+        document.getElementById('base-url').textContent = `Base URL: ${window.location.href}`;
+        console.log('Current URL:', window.location.href);
+        console.log('Path:', window.location.pathname);
+    </script>
+</body>
+</html>

@@ -6,9 +6,10 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true,
   },
+  // For username.github.io repositories, GitHub serves from the root domain
+  // No basePath is needed, and assetPrefix should be empty
   basePath: '',
-  assetPrefix: '/',  // Must start with a leading slash for next/font
-  distDir: 'out',
+  assetPrefix: '',
 };
 
 export default nextConfig;
