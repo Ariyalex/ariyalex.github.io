@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { FilledButton } from "./componenets/button";
+import Image from "next/image";
 
 export function HomeSection() {
     return (
@@ -19,7 +20,7 @@ export function HomeSection() {
                     </div>
                 </div>
                 <div className="flex justify-center items-center">
-                    <img src="../profile.png" alt="" className=" w-[440px] sm:w-[600px] rounded-full" />
+                    <Image src="/profile.png" alt="profile" width={440} height={440} className="w-[440px] sm:w-[600px] rounded-full" />
                 </div>
             </div>
         </div>

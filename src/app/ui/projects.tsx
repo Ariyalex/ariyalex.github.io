@@ -42,13 +42,16 @@ export function Projects() {
                         <ProjectCard
                             key={index}
                             image={item.image}
+                            alt={item.alt}
                             title={item.title}
                             description={item.description}
                         >
                             {item.tag != null && item.tag.length > 0 && (
                                 <div className="flex flex-row gap-3">
                                     {item.tag.map((item, index) => (
-                                        <TagBlue key={index} children={item} />
+                                        <TagBlue key={index}>
+                                            {item}
+                                        </TagBlue>
                                     ))}
                                 </div>
                             )}

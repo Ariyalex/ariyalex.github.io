@@ -1,5 +1,6 @@
 import { ReactNode } from "react"
 import clsx from "clsx";
+import Image from "next/image";
 
 interface CardProps {
     children: ReactNode;
@@ -9,7 +10,7 @@ interface CardProps {
 
 interface ProjectCardProps {
     children?: ReactNode;
-    alt?: string;
+    alt: string;
     image: string;
     title: string;
     description: string;
@@ -33,7 +34,7 @@ export function ProjectCard({ children, image, alt, title, description }: Projec
     return (
         <div className="sm:w-[600px] w-[282px] h-fit rounded-lg shadow-sm overflow-clip flex-none snap-center">
             <div className="sm:h-[192px] h-[150px] w-full">
-                <img src={image} alt={alt} className="w-full h-full object-cover" />
+                <Image src={image} layout="intrisic" width={600} height={192} objectPosition="center" objectFit="cover" alt={alt} className="w-full h-full object-cover" />
             </div>
             <div className="flex shrink-0 h-fit w-full gap-[10px] sm:p-6 p-4 flex-col">
                 <h3 className="text-xl font-medium">{title}</h3>

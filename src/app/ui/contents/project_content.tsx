@@ -1,5 +1,6 @@
 export interface projectItem {
     image: string;
+    alt: string;
     title: string;
     description: string;
     tag: string[];
@@ -7,7 +8,8 @@ export interface projectItem {
 
 export const projectContent: projectItem[] = [
     {
-        image: "../projects/jaku.png",
+        image: "/projects/jaku.png",
+        alt: "jaku",
         title: "JaKu",
         description: "Jaku adalah aplikasi Jadwal Kuliah yang berbasis Flutter dan menggunakan Firebase sebagai backend.",
         tag: [
@@ -15,7 +17,8 @@ export const projectContent: projectItem[] = [
         ]
     },
     {
-        image: "../projects/pomodoro.png",
+        image: "/projects/pomodoro.png",
+        alt: "pomodoro",
         title: "Pomodoro Timer",
         description: "Web pomodoro timer yang membebaskan user menentukan wakut pomodoro dan dilengkapi dengan spotify player.",
         tag: [
@@ -23,7 +26,8 @@ export const projectContent: projectItem[] = [
         ]
     },
     {
-        image: "../projects/jaku_parse.png",
+        image: "/projects/jaku_parse.png",
+        alt: "jaku parse",
         title: "JaKu PDF Parsing",
         description: "Backend dari salah satu fitur JaKu, ini digunakan untuk otomasi add jadwal kuliah dgn parsing file PDF.",
         tag: [
@@ -31,7 +35,8 @@ export const projectContent: projectItem[] = [
         ]
     },
     {
-        image: "../projects/rizzman.png",
+        image: "/projects/rizzman.png",
+        alt: "rizzman",
         title: "RizzMan",
         description: "Web Risk Management, ini adalah project team yang berangotakan saya yang berperan sebagai FrontEnd developer, Arbath dan Akmal Sani sebagai Backend, serta Achmad Alghazali sebagai UI/UX.",
         tag: [
